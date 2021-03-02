@@ -1,0 +1,188 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+  \usepackage{amssymb}
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Lab01\_Homework\_RMarkdown},
+  pdfauthor={你是誰 R09342000 新聞所碩五},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Lab01\_Homework\_RMarkdown}
+\author{你是誰 R09342000 新聞所碩五}
+\date{2021/02/22}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\hypertarget{ux4f5cux696dux76eeux7684markdown-ux8a9eux6cd5ux5b78ux7fd2}{%
+\subsection{作業目的：Markdown
+語法學習}\label{ux4f5cux696dux76eeux7684markdown-ux8a9eux6cd5ux5b78ux7fd2}}
+
+這份作業希望能夠讓你熟習於撰寫 Markdown 語法，希望你能夠成為 Markdown
+界的霸主，聽起來很厲害。
+
+請參考網路上的教學，你可以選擇仔細練習每個部份，或是有問題的時候再去查找上面的資源。緊接著就要開始寫第一份作業了，真是令人興奮！
+
+你可以隨時點擊 RStudio 上方的 Knit 按鈕輸出檔案並且預覽，也可以利用
+\href{https://jbt.github.io/markdown-editor}{Markdown
+線上編輯器}看你的結果長得如何。
+
+\hypertarget{ux4f5cux696d-rmarkdown-ux8a9eux6cd5ux7df4ux7fd2}{%
+\subsection{作業: RMarkdown
+語法練習}\label{ux4f5cux696d-rmarkdown-ux8a9eux6cd5ux7df4ux7fd2}}
+
+滿分共 100 分。
+
+\hypertarget{a.-ux8cc7ux6599ux65b0ux805eux6848ux4f8bux8209ux4f8b-60-ux5206}{%
+\subsubsection{A. 資料新聞案例舉例 (60
+分)}\label{a.-ux8cc7ux6599ux65b0ux805eux6848ux4f8bux8209ux4f8b-60-ux5206}}
+
+請找一則資料新聞，並以 Markdown 語法介紹它。
+
+介紹文必須包含底下者三種元素：字體加深, 清單(lists),
+連結(links)。此外，請你再額外挑選至少兩種元素，譬如說字體變斜, 插入圖片,
+加入引用, etc.
+
+因為重點是使用 Markdown
+語法，因此字數不用多，250字\textasciitilde400字即可，全文段落在
+2段\textasciitilde4段間，請練習如何在 Markdown 中分行與分段！
+
+請把結果貼在\texttt{\#\#\#\#\ 結果}下方。
+
+\hypertarget{ux7d50ux679c}{%
+\paragraph{結果}\label{ux7d50ux679c}}
+
+\begin{figure}
+\centering
+\includegraphics{C:/Users/Hans/Desktop/P\#_title}
+\caption{報導畫面}
+\end{figure}
+
+P\#新聞實驗室的\href{https://newmedia.pts.org.tw/subsidy/}{《選票變現金---200億補助款一次看》}，是我覺得相當有趣的一則資料新聞。
+
+根據報導內的說明，記者從中選會資料庫調閱出
+
+\begin{itemize}
+\tightlist
+\item
+  橫跨25年
+\item
+  共21場選舉
+\item
+  共6萬千餘筆資料
+\end{itemize}
+
+記者利用這些\textbf{候選人及政黨的補助款資料數據}，向讀者說明\textbf{台灣選舉文化與政黨勢力消長之間的關係}。
+
+我認為這則新聞作到的，並不只是彙整數據，而能帶領讀者從數字圖表呈現的趨勢中看見問題。
+
+舉例來說，我們看見了民主進步黨所獲得的選舉補助款不斷攀升，已不再是最初那個資源匱乏、需被扶持的小黨。
+
+同時我們也從\textbf{國、民兩大黨攫獲了這20多年來絕大多數款項的事實}，發現選舉補助款的實施情況，與它\emph{「健全政黨政治」}的初衷，有些背道而馳。
+
+我的童年
+
+至於選舉補助款到底怎麼花，報導也邀請幾位候選人現身說法，節選如下：
+
+\begin{quote}
+我加入選舉，就是為了30元的補助款，我不諱言，這就是一個選舉花招。
+
+by 屏東縣議員蔣月惠
+\end{quote}
+
+\begin{quote}
+它是一體兩面的，否則未來選舉的情況就是，會參與選舉的人都是有本錢的人，很多人參政的機會就被排除掉了。
+
+by 時任時代力量黨主席徐永明
+\end{quote}
+
+除了上述的內容，這篇專題也透過精美的網頁設計，邀請讀者在閱讀的過程參與互動，相當有趣。
+唯一美中不足的是，這則新聞整理了過去，但卻無法藉以提出對未來的一些預測、假設或建議，讓報導的厚度有些不足。
+
+\hypertarget{b.-r-code-chunk-ux7df4ux7fd2-40-ux5206}{%
+\subsubsection{B. R code chunk 練習 (40
+分)}\label{b.-r-code-chunk-ux7df4ux7fd2-40-ux5206}}
+
+\hypertarget{b.01-20ux5206}{%
+\paragraph{B.01 (20分)}\label{b.01-20ux5206}}
+
+如先前所提，Rmarkdown 當中可以插入 code chunk，請參考
+\href{https://rmarkdown.rstudio.com/lesson-3.html}{RStudio
+的教學}，在底下插入一段 code chunk，並在當中計算 \texttt{1+1}
+的答案並將結果列印出來。
+
+\hypertarget{b.02-20ux5206}{%
+\paragraph{B.02 (20分)}\label{b.02-20ux5206}}
+
+\begin{itemize}
+\item
+  請解釋 chunk header 中參數 include = FALSE
+  會有什麼後果，並在底下加一段 include = FALSE 的 code
+  chunk，一樣在裡面計算 \texttt{1+1} 的答案。
+\item
+  請解釋 chunk header 中參數 echo = FALSE 會有什麼後果，並在底下加一段
+  echo = FALSE 的 code chunk，一樣在裡面計算 \texttt{1+1} 的答案。
+\end{itemize}
+
+\end{document}
